@@ -1,0 +1,49 @@
+name: impostormx
+description: "Impostor party game for Android."
+
+publish_to: 'none'
+
+version: 2.2.0+4
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Gestión de estado
+  provider: ^6.0.5
+  # Pantalla encendida
+  wakelock_plus: ^1.1.4
+  shared_preferences: ^2.5.4
+  flutter_staggered_animations: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Bungee
+      fonts:
+        - asset: assets/fonts/Bungee-Regular.ttf
+
+    - family: YoungSerif
+      fonts:
+        - asset: assets/fonts/YoungSerif-Regular.ttf
+
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/impostor.png"
+  adaptive_icon_background: "#151515"
+  adaptive_icon_foreground: "assets/images/impostor.png"
